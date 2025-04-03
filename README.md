@@ -1,37 +1,68 @@
-# ai-systemIntegration
+## Language
 
-#### 介绍
-ai系统集成
+- [中文](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README.md)
+- [English](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README_en.md)
 
-#### 软件架构
-软件架构说明
+---
 
+## ollama-chat-ui-vue
 
-#### 安装教程
+使用`vue3 + vite + elementUi` 搭建的前端 chat,通过 ollama 可与模型对话,目前已经支持`deepseek`的独立思考标签和切换模型(联网查询后续支持)
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+## 前置工作
 
-#### 使用说明
+安装`ollama`,[ollama 官网地址](https://ollama.com/)
+安装完`ollama`后，打开`cmd`，下载模型(我选了个最小的模型，[模型地址](https://ollama.com/library/deepseek-r1:1.5b))
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+```bash
+ollama run deepseek-r1:1.5b
+```
 
-#### 参与贡献
+等待下载完成
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+## 启动 ollama
 
+cmd 打开输入
 
-#### 特技
+```bash
+ollama serve
+```
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+等待服务启动
+
+## 启动前端 ollama-chat-ui-vue
+
+注意：node 版本选择 18.10.0
+
+打开项目`cmd`安装依赖
+
+```bash
+npm install
+```
+
+启动项目
+
+```bash
+npm run dev
+```
+
+## 配置文件
+
+src-api-aiSystem-ollama.js
+vite.config
+
+## 效果图
+
+![image-2025219001](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/962ea5381b71705703fe71d230863a3.png)
+
+![image-2025219002](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/ffb7499ec0eeaccfa348422faaf9b1b.png)
+
+![image-2025219003](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/1fba9f96a2cdfdd7592a97fdbc89617.png)
+
+## 欢迎 Issues 交流
+
+## 版权信息
+
+开发不易如果内容帮助到您，请给我们点上星星。
+
+遵循 MIT 开源协议发布，并提供免费使用
