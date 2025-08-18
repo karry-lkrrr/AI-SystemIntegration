@@ -29,7 +29,8 @@ ollama run qwen3:0.6b
 ```bash
 o11ama ru qwen3:8b
 ```
-当出现`Send a message(? for help)`的时候说明运行成功，即可进行下一步
+当出现以下英文的时候说明运行成功，即可进行下一步
+> Send a message(? for help)
 ![image-2025818002](https://i-blog.csdnimg.cn/direct/2223be989cb84ccb9624ee6d0832446b.png#pic_center)
 ## 启动 ollama
 
