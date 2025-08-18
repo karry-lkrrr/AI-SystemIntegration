@@ -12,14 +12,25 @@
 ## 前置工作
 
 安装`ollama`,[ollama 官网地址](https://ollama.com/)
-安装完`ollama`后，打开`cmd`，下载模型(我选了个最小的模型，[模型地址](https://ollama.com/library/deepseek-r1:1.5b))
+安装完`ollama`后，打开`cmd`，下载模型(模型可以看个人设备性能、任务需求选择，以下是一些参考,任选一个即可 →[模型地址](https://ollama.com/search))
+
+![image-2025818001](https://i-blog.csdnimg.cn/direct/4a3d5b241fbc422fa6059d35e98f7736.png#pic_center)
 
 ```bash
 ollama run deepseek-r1:1.5b
 ```
-
-等待下载完成
-
+```bash
+ollama run gemma3:270m
+```
+```bash
+ollama run qwen3:0.6b
+```
+等待下载完成，这里我下载的是
+```bash
+o11ama ru qwen3:8b
+```
+当出现`Send a message(? for help)`的时候说明运行成功，即可进行下一步
+![image-2025818002](https://i-blog.csdnimg.cn/direct/2223be989cb84ccb9624ee6d0832446b.png#pic_center)
 ## 启动 ollama
 
 cmd 打开输入
