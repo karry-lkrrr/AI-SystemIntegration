@@ -1,68 +1,101 @@
-## Language
+# ollama-chat-ui-vue
 
+A front-end chat interface built with `vue3 + vite + elementUi`, enabling conversations with local large models via ollama. Currently, it supports `deepseek`'s independent thinking tags and model switching (internet search functionality will be supported in future updates).
+
+
+## 🌐 Language Selection
 - [中文](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README.md)
 - [English](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README_en.md)
 
----
 
-## ollama-chat-ui-vue
+## 📋 Preparations
 
-The front-end chat built with `vue3 + vite + elementUi` can talk to the model through ollama, and now supports `deepseek` independent thinking tags and switching models (follow-up support for online queries)
+### 1. Install ollama
+First, install the ollama runtime environment from the official website:  
+[ollama official site](https://ollama.com/)
 
-## Front-loading work
 
-Installation `ollama`,[ollama](https://ollama.com/)
-After installing `ollama`, open `cmd` and download the model(I chose the smallest model,[The address of the model](https://ollama.com/library/deepseek-r1:1.5b))
+### 2. Download a Model
+After installation, open a command-line tool (CMD/PowerShell) and download a model based on your device performance and task requirements (for model options, see: [ollama Model Library](https://ollama.com/search)).
 
+Recommended model examples:
 ```bash
+# Lightweight model (for beginners)
 ollama run deepseek-r1:1.5b
+
+# Code-specialized model
+ollama run deepseek-coder-v2:16b
+
+# General-purpose model
+ollama run qwen2.5-coder:7b
 ```
 
-Wait for the download to complete
+> Example: This guide uses `deepcoder:1.5b` for demonstration
+> ```bash
+> ollama run deepcoder:1.5b
+> ```
 
-## Start ollama
+The model is running successfully when you see this prompt in the command line:  
+`Send a message(? for help)`  
 
-cmd to open the input
+![Model startup success](https://i-blog.csdnimg.cn/direct/0313e33227d84814ac05faeb1340465e.png)
 
-```bash
-ollama serve
-```
 
-Wait for the service to start
+## 🚀 Start the ollama Service
+After preparing the model, start the ollama service:
 
-## Launch the program ollama-chat-ui-vue
+1. Open a command-line tool and enter:
+   ```bash
+   ollama serve
+   ```
 
-Note: Node version is 18.10.0
+2. Wait for the service to start completely.
 
-Open the project 'cmd' to install the dependencies
+> [!WARNING]
+> If you see a "port occupied" error when running `ollama serve`, it’s usually because ollama is already running in the background. You can proceed to the next step directly.
+> 
+> ![Port occupation prompt](https://i-blog.csdnimg.cn/direct/e779a071bb584ac4b86f4753af09f003.png)
 
-```bash
-npm install
-```
 
-Start the project
+## 💻 Start the Front-End Project
 
-```bash
-npm run dev
-```
+### Environment Requirements
+- **Node.js version**: Must be `v18.10.0`  
+  Download link: [Node.js v18.10.0](https://nodejs.org/download/release/v18.10.0/) (recommended to download the `.msi` file for direct installation)  
+  ![Node.js download page](https://i-blog.csdnimg.cn/direct/cdbb433195f04d868c8a8171764ae68d.png)
 
-## Profiles
 
-src-api-aiSystem-ollama.js
-vite.config
+### Steps
+1. After cloning the project, open the command line in the project root directory and install dependencies:
+   ```bash
+   npm install
+   ```
 
-## Renderings
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
 
-![image-2025219001](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/962ea5381b71705703fe71d230863a3.png)
+Once started successfully, a local access address will be displayed. Example:  
+![Project startup success](https://i-blog.csdnimg.cn/direct/a59d8e5b12074c9089fa784db0f90aad.png)
 
-![image-2025219002](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/ffb7499ec0eeaccfa348422faaf9b1b.png)
 
-![image-2025219003](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/1fba9f96a2cdfdd7592a97fdbc89617.png)
+## ⚙️ Configuration Files
+To customize settings, modify these files:
+- `src/api/aiSystem/ollama.js` (API-related configurations)
+- `vite.config.js` (Project build configurations; can be ignored if the project runs normally by default)
 
-## Feel free to exchange issues
 
-## Copyright Information
+## 📸 Screenshots
+![Chat interface 1](https://i-blog.csdnimg.cn/direct/1e3528ca841a48b2831ad3505ce0be33.png)  
+![Chat interface 2](https://i-blog.csdnimg.cn/direct/ccf4c710207541ef98b42277b9735a1f.png)  
+![Chat interface 3](https://i-blog.csdnimg.cn/direct/b06d37ded9c34069a46ae79f5c29d2b0.png)
 
-It's not easy to develop; if the content helps you, please give us a star.
 
-Released under the MIT open source licence and free to use.
+## 🤝 Feedback & Communication
+Feel free to submit issues or suggestions via [Issues](https://github.com/LovelittleBears/ollama-chat-ui-vue/issues).
+
+
+## 📄 Copyright Information
+This project is released under the **MIT open-source license** and is free to use.  
+Development takes effort—if this content helps you, please consider giving it a Star!
