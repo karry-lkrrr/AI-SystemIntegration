@@ -27,13 +27,13 @@ ollama run qwen2.5-coder:7b
 ```
 等待下载完成，这里我下载的是
 ```bash
-o11ama ru qwen3:8b
+ollama run deepcoder:1.5b
 ```
 当出现以下英文的时候说明运行成功，即可进行下一步
 > Send a message(? for help)
-![image-2025818002](https://i-blog.csdnimg.cn/direct/2223be989cb84ccb9624ee6d0832446b.png#pic_center)
+![image-2025819001](https://i-blog.csdnimg.cn/direct/0313e33227d84814ac05faeb1340465e.png)
 ## 启动 ollama
-
+启动前需确保
 cmd 打开输入
 
 ```bash
@@ -41,10 +41,13 @@ ollama serve
 ```
 
 等待服务启动
+⚠️注意：在此处输入`ollama serve`时可能出现端口被占用，这是因为前面下载安装好`ollama`并运行了，直接进行下一步即可
 
 ## 启动前端 ollama-chat-ui-vue
 
-注意：node 版本选择 18.10.0
+注意：node 版本选择 [node-v18.10.0-x64.msi](https://nodejs.org/download/release/v18.10.0/).
+下载地址(msi可直接安装)： 
+![image-2025819002](https://i-blog.csdnimg.cn/direct/cdbb433195f04d868c8a8171764ae68d.png)
 
 打开项目`cmd`安装依赖
 
@@ -57,24 +60,23 @@ npm install
 ```bash
 npm run dev
 ```
-
+![image-2025819003](https://i-blog.csdnimg.cn/direct/a59d8e5b12074c9089fa784db0f90aad.png)
 ## 配置文件
 
 src-api-aiSystem-ollama.js
-vite.config
+vite.config（此处看需求，若是下载本文件运行正常可省略）
 
-## 效果图
+## 运行效果图
 
-![image-2025219001](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/962ea5381b71705703fe71d230863a3.png)
+![image-2025819004](https://i-blog.csdnimg.cn/direct/1e3528ca841a48b2831ad3505ce0be33.png)
 
-![image-2025219002](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/ffb7499ec0eeaccfa348422faaf9b1b.png)
+![image-2025819005](https://i-blog.csdnimg.cn/direct/ccf4c710207541ef98b42277b9735a1f.png)
 
-![image-2025219003](https://raw.githubusercontent.com/LovelittleBears/ollama-chat-ui-vue/refs/heads/main/1fba9f96a2cdfdd7592a97fdbc89617.png)
+![image-2025819006](https://i-blog.csdnimg.cn/direct/b06d37ded9c34069a46ae79f5c29d2b0.png)
 
 ## 欢迎 Issues 交流
 
 ## 版权信息
-
 开发不易如果内容帮助到您，请给我们点上星星。
 
 遵循 MIT 开源协议发布，并提供免费使用
