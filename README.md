@@ -20,10 +20,10 @@
 ollama run deepseek-r1:1.5b
 ```
 ```bash
-ollama run gemma3:270m
+ollama run deepseek-coder-v2:16b
 ```
 ```bash
-ollama run qwen3:0.6b
+ollama run qwen2.5-coder:7b
 ```
 等待下载完成，这里我下载的是
 ```bash
