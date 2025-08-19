@@ -1,6 +1,6 @@
 # ollama-chat-ui-vue
 
-基于 `vue3 + vite + elementUi` 构建的前端聊天界面，通过 ollama 可与本地大模型对话。目前已支持 `deepseek` 独立思考标签及模型切换功能（联网查询功能将在后续支持）。
+基于`vue3 + vite + elementUi`构建的前端聊天界面，通过 ollama 可与本地大模型对话。目前已支持 `deepseek` 独立思考标签及模型切换功能（联网查询功能将在后续支持）。
 
 
 ## 🌐 语言选择
