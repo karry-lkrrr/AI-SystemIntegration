@@ -7,17 +7,18 @@
 - [中文](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README.md)
 - [English](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README_en.md)
 
-
 ## 📋 前置准备
 
 ### 1. 安装 ollama
 首先需要安装 ollama 运行环境，官方地址：  
 [ollama 官网](https://ollama.com/)
 
+如果你是刚接触 Ollama，想了解它的基本信息、功能特点等内容，可以参考这篇详细的介绍教程：[Ollama 介绍教程](https://blog.csdn.net/TINGlkrrr/article/details/150492201?spm=1011.2415.3001.5331)，帮助你快速认识和上手这个工具。
+
 Ollama 安装的默认路径为 C 盘（具体路径为 C:\Users\XX\AppData\Local\Programs\Ollama，其中“XX”为当前用户名）。由于 C 盘通常是系统盘，若长期使用 Ollama 或存储较多模型，可能会占用大量系统盘空间，进而导致电脑运行卡顿。
 
 若需要将 Ollama 迁移到其他磁盘以释放 C 盘空间，可参考以下详细教程：  
-[Ollama 移动到其他盘的具体操作步骤](https://blog.csdn.net/xiaoxiongxia/article/details/145523060?spm=1001.2014.3001.5501)
+[Ollama 移动到其他盘的具体操作步骤](https://blog.csdn.net/xiaoxiongxia/article/details/145523060?spm=1001.2014.3001.5501)。
 
 ### 2. 下载模型
 安装完成后，打开命令行工具（CMD/PowerShell），根据设备性能和任务需求选择并下载模型（模型列表参考：[ollama 模型库](https://ollama.com/search)）。
