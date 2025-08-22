@@ -1,7 +1,6 @@
 # Ollama-chat-ui-vue
 
-欢迎使用 `Ollama` 智能交互平台，这是一款基于 `Vue3 + Vite + Element UI` 构建的本地化 AI 交互解决方案。我们致力于为用户提供直观、高效的大模型操作体验，无需依赖云端服务，即可在本地设备上轻松实现智能对话与图像生成功能。
-
+基于`vue3 + vite + elementUi`构建的前端聊天界面，通过`ollama`可与本地大模型对话。目前已支持`deepseek`独立思考标签及模型切换功能（联网查询功能将在后续支持）。
 
 ## 🌐 语言选择
 - [中文](https://github.com/LovelittleBears/ollama-chat-ui-vue/blob/main/README.md)
