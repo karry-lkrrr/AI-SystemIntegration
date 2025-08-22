@@ -10,13 +10,15 @@ A front-end chat interface built with `vue3 + vite + elementUi`, enabling conver
 ## 📋 Preparations
 
 ### 1. Install Ollama
-First, you need to install the Ollama runtime environment. Official website:  
-[Ollama Official Site](https://ollama.com/)
+First, you need to install the Ollama runtime environment. The official website is:  
+[Ollama Official Website](https://ollama.com/)
 
-The default installation path for Ollama is the C drive (specifically C:\Users\XX\AppData\Local\Programs\Ollama, where "XX" is your current username). Since the C drive is usually the system drive, long-term use of Ollama or storing multiple models may take up a lot of system drive space, which could cause the computer to run sluggishly.
+If you are new to Ollama and want to learn about its basic information, features, and more, you can refer to this detailed introductory tutorial: [Ollama Introduction Tutorial](https://blog.csdn.net/TINGlkrrr/article/details/150492201?spm=1011.2415.3001.5331), which will help you quickly understand and get started with this tool.
+
+The default installation path for Ollama is the C drive (the specific path is C:\Users\XX\AppData\Local\Programs\Ollama, where "XX" is the current username). Since the C drive is usually the system drive, long-term use of Ollama or storing many models may take up a lot of system drive space, which can cause the computer to run sluggishly.
 
 If you need to migrate Ollama to another disk to free up space on the C drive, you can refer to the following detailed tutorial:  
-[Step-by-Step Guide to Moving Ollama to Another Drive](https://blog.csdn.net/xiaoxiongxia/article/details/145523060?spm=1001.2014.3001.5501)
+[Specific Steps to Move Ollama to Another Drive](https://blog.csdn.net/xiaoxiongxia/article/details/145523060?spm=1001.2014.3001.5501).
 
 ### 2. Download a Model
 After installation, open a command-line tool (CMD/PowerShell) and download a model based on your device performance and task requirements (for model options, see: [ollama Model Library](https://ollama.com/search)).
